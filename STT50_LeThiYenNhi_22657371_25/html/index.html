@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="../HEADER.PNG" alt="" class="w-100">
+
+        </div>
+        <div class="row">
+            <nav class="nav        ">
+                <a class="nav-link active" aria-current="page" href="#">Đăng nhập</a>
+                <a class="nav-link" href="#" id="dangki">Đăng ký</a>
+
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>DANH SÁCH THAM GIA ĐỘI ROBOCON KHOA CNTT</h4>
+            </div>
+
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Mã thành viên</th>
+                    <th scope="col">Họ tên</th>
+                    <th scope="col">Lớp</th>
+                    <th scope="col">Ngày tham gia</th>
+                    <th scope="col">Điện thoại</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody id="than">
+
+            </tbody>
+        </table>
+
+        <footer>
+            <div class="row text-center">
+                <div class="col-4">
+                    <h5>SVTH: Lê Thị Yến Nhi</h5>
+                </div>
+                <div class="col-4">
+                    <h5>Mã số sinh viên: 22657371</h5>
+                </div>
+                <div class="col-4">
+                    <h5>Lớp:DHTMDT18B</h5>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="bang" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog        ">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h1 class="modal-title  " id="staticBackdropLabel">THONG TIN CA NHAN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">Mã thành viên:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="vien">
+                                <span id="loivien">*</span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">Họ tên:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="ten">
+                                <span id="loiten">*</span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">Lớp:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="lop">
+                                <span id="loilop">*</span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">Ngày tham gia </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="date" class="form-control" id="ngay">
+                                <span id="loingay">*</span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">Số điện thoại:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="so">
+                                <span id="loiso">*</span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">Email:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="meo">
+                                <span id="loimeo">*</span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-success w-100" id="gui">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="../js/jquery.js"></script>
+    </div>
+
+</body>
+
+</html>
