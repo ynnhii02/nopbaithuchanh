@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+ <div class="container">
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog        ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="staticBackdropLabel">THONG TIN NHAN VIEN</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <label for="">Ma nhan vien:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <input type="text" class="form-control" placeholder="Ma nhan su" id="ma">
+                    <span id="loima">(*)</span> 
+                </div>
+            </div>
+
+
+     <div class="row mt-2">
+                <div class="col-12">
+                    <label for="">Ten nhan vien:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <input type="text" class="form-control" placeholder="Ho ten" id="ten">
+                    <span id="loiten">(*)</span> 
+                </div>
+            </div>
+
+
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <label for="">Ngay vao cong ty:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <input type="date" class="form-control" id="ngay">
+                    <span id="loingay">(*)</span> 
+                </div>
+            </div>
+
+
+
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <label for="">Chuc vu:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                   <input type="radio" name="vu" id="chuc" value="Can bo quan ly">
+                   <label for="">Can bo quan ly</label>
+                   <input type="radio" name="vu" id="chuc" value="Nhan vien">
+                   <label for="">Nhan vien</label>
+                   <br><span id="loichuc">(*)</span> 
+                   
+                </div>
+             
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <label for="">Bac luong:</label>
+                   
+                </div>
+            </div>
+            <div class="row " >
+                <div class="col-12">
+                    <select name="" id="bac" class="form-select">
+                        <option value="1.86">Bac 1</option>
+                        <option value="2.0">Bac 2</option>
+                        <option value="3.4">Bac 3</option>
+                    </select>
+                </div>
+            </div>
+         
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <label for="" >He so:</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <input type="text" class="form-control" id="he">
+                   
+                </div>
+            </div>
+
+
+            </div>
+            <div class="row" id="duoi">
+                <div class="col-3">
+            <button type="button" class="them" id="them">Them</button>
+        </div>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="dong" data-bs-dismiss="modal">Close</button>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>DANH SACH LUONG NHAN VIEN</h1>
+            </div>
+        </div>
+        <nav class="nav        ">
+            <a class="nav-link active" aria-current="page" href="#">Trang chu</a>
+            <a class="nav-link" href="#">Thong tin</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cap nhat luong</a>
+
+        </nav>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Ma nhan su</th>
+                    <th scope="col"> Ho ten</th>
+                    <th scope="col">Ngay hop dong</th>
+                    <th scope="col">Chuc vu</th>
+                    <th scope="col">Bac luong</th>
+                </tr>
+            </thead>
+            <tbody id="than">
+                <tr>
+                    <td>
+                        1
+                    </td>
+                   <td> 912345678</td>
+                   <td>Hoang Minh Vuong</td>
+                   <td>2000-12-5</td>
+                   <td>Nhan vien</td>
+                   <td>1.86</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <footer>
+            <div class="row text-center">
+                <div class="col-6">
+<h5>Ma sinh vien: 22657371</h5>
+                </div>
+                <div class="col-6">
+                    <h5>Ho ten sinh vien: Le Thi Yen Nhi</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="../js/jquery.js"></script> 
+</body>
+</html>
